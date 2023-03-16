@@ -45,13 +45,14 @@
               <br>
               <h4>AND AI ENGINEER</h4>
               <br>
-              <p class="text-grey mr-16">
+              <p class="text-black mr-16">
                 Samuel Abatneh is a skilled software engineer and machine learning engineer based in Addis Ababa,
                 Ethiopia. With a passion for technology and a strong knack for problem-solving, Samuel has proven himself
                 to be a valuable asset to any team.
               </p>
+              
               <br>
-              <p class="text-grey mr-16 mb-10">
+              <p class="text-black mr-16 mb-10">
                 In addition to his work at Addis Ababa University, Samuel is also a machine learning engineer. He has
                 expertise in building machine learning algorithms and models tailored to specific business needs. He is
                 passionate about exploring machine learning concepts and integrating them into actual projects.

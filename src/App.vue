@@ -1,8 +1,16 @@
 <template>
   <v-app>
     <v-main>
-      <router-view/>
+      <router-view />
     </v-main>
+    <v-footer dark padless class="justify-center">
+      <v-card flat tile class="indigo lighten-1 white--text text-center">
+        <hr>
+        <v-card-text class="white--text">
+          &#169; {{ new Date().getFullYear() }} — <strong>SAMUEL ABATNEH</strong>
+        </v-card-text>
+      </v-card>
+    </v-footer>
   </v-app>
 </template>
 
@@ -10,9 +18,19 @@
 
 export default {
   name: 'App',
-
-  data: () => ({
-    //
-  }),
+  data() {
+    return {
+      drawer: null,
+      items: [
+        { title: 'Home', icon: 'mdi-view-dashboard' },
+        { title: 'About', icon: 'mdi-forum' },
+      ],
+      icons: [
+        'mdi-facebook',
+        'mdi-twitter',
+        'mdi-instagram',
+      ],
+    }
+  },
 }
 </script>
