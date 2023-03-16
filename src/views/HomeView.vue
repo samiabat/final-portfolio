@@ -26,6 +26,17 @@
           </v-col>
         </v-row>
       </div>
+      <v-col cols="12" class="mt-16" id="about">
+        <div> 
+          <v-row>
+            <v-col cols="12" sm="6">
+              <div class="egg">
+                <v-img src="sa.png" contain max-height="400"></v-img>
+              </div>
+            </v-col>
+          </v-row>
+        </div>
+      </v-col>
       
     </v-container>
   </v-app>
@@ -81,5 +92,14 @@ export default defineComponent({
   width: 50%;
   background: black;
   transform: skew(0deg, -4deg);
+}
+.egg{
+  display: block;
+  margin-left: 100px;
+  margin-top: 50px;
+  width: 360px;
+  height: 300px;
+  background-color: yellow;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
 }
 </style>
