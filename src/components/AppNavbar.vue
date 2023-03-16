@@ -5,12 +5,13 @@
         </v-btn>
 
         <v-spacer></v-spacer>
-        <v-btn text @click="scroll('Home')" class="text-yellow">Home</v-btn>
-        <v-btn text @click="scroll('Projects')" >Projects</v-btn>
-        <v-btn text @click="scroll('Blogs')" >Blogs</v-btn>
-        <v-btn text @click="scroll('Certificates')" >Certificates</v-btn>
-        <v-btn text @click="scroll('About')">About</v-btn>
-        <v-btn text @click="scroll('Contact')">Contact</v-btn>
+        <a href="/" class="text-yellow ml-12">HOME</a>
+        <a href="/blogs" class="text-white ml-12">BLOGS</a>
+        <a href="/projects" class="text-white ml-12">PROJECTS</a>
+        <a href="/educations" class="text-white ml-12">EDUCATIONS</a>
+        <a href="/certifications" class="text-white ml-12">CERTIFICATIONS</a>
+        <a href="/contact" class="text-white ml-12">CONTACT</a>
+        <a href="/about" class="text-white ml-12">ABOUT</a>
     </v-app-bar>
 </template>
 
@@ -27,4 +28,7 @@ export default {
 </script>
 
 <style>
+a {
+    text-decoration: none;
+}
 </style>
