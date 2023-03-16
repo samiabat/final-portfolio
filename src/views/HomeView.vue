@@ -6,38 +6,73 @@
         <v-row>
           <v-col cols="5">
             <div style="position: relative;" class="mt-16">
-            <h1 class="text-grey">HELLO, </h1>
-            <h1>I'M SAMUEL ABATNEH</h1>
-            <span class="text-grey">Web Scrapper, AI & Software Engineer</span>
-            <br>
-            <v-btn tile dark class="text-yellow mt-8" variant="outlined">Contact me</v-btn>
+              <h1 class="text-grey">HELLO, </h1>
+              <h1>I'M SAMUEL ABATNEH</h1>
+              <span class="text-grey">Web Scrapper, AI & Software Engineer</span>
+              <br>
+              <v-btn tile dark class="text-yellow mt-8" variant="outlined">Contact me</v-btn>
             </div>
           </v-col>
 
           <v-col cols="2">
-            <div style="position: absolute; z-index: 9999; bottom: 0; margin-left: auto; margin-right: auto; left: 0; right: 0; text-align: center;">
-            <v-icon icon="fas fa-angle-double-down"></v-icon>
+            <div
+              style="position: absolute; z-index: 9999; bottom: 0; margin-left: auto; margin-right: auto; left: 0; right: 0; text-align: center;">
+              <v-icon icon="fas fa-angle-double-down"></v-icon>
             </div>
           </v-col>
           <v-col cols="5">
             <div style="position: relative;z-index: 9999;" class="mt-16">
-            <v-img src="sa.png" contain max-height="300"></v-img>
+              <v-img src="sa.png" contain max-height="300"></v-img>
             </div>
           </v-col>
         </v-row>
       </div>
       <v-col cols="12" class="mt-16" id="about">
-        <div> 
+        <div>
           <v-row>
             <v-col cols="12" sm="6">
               <div class="egg">
                 <v-img src="sa.png" contain max-height="400"></v-img>
               </div>
             </v-col>
+            <v-col cols="12" sm="6">
+              <h4 class="mt-16">ABOUT ME</h4>
+              <div style="width: 300px">
+                <v-slider v-modal="slider2" color="yellow">
+                </v-slider>
+              </div>
+              <h4>I AM CREATIVE WEBSCRAPPER,</h4>
+              <br>
+              <h4>AND AI ENGINEER</h4>
+              <br>
+              <p class="text-grey mr-16">
+                Samuel Abatneh is a skilled software engineer and machine learning engineer based in Addis Ababa,
+                Ethiopia. With a passion for technology and a strong knack for problem-solving, Samuel has proven himself
+                to be a valuable asset to any team.
+                Currently, Samuel is working as a software engineer at Addis Ababa University, where he designs and
+                develops various software applications using the latest programming languages and frameworks. His
+                extensive experience with software development coupled with his knowledge in machine learning has given
+                him an edge in creating high-quality, efficient, and effective programs.
+              </p>
+              <br>
+              <p class="text-grey mr-16 mb-16">
+                In addition to his work at Addis Ababa University, Samuel is also a machine learning engineer. He has
+                expertise in building machine learning algorithms and models tailored to specific business needs. He is
+                passionate about exploring machine learning concepts and integrating them into actual projects.
+                Although Samuel has achieved considerable success in his career journey so far, he is always seeking new
+                challenges and opportunities for growth. He is actively seeking internship programs with top tech
+                companies to gain more industry experience and contribute his expertise to the organization's success.
+                In conclusion, Samuel Abatneh is a dedicated tech enthusiast and an excellent addition to any team. With
+                immense experience in software engineering, machine learning, and a strong passion for technology, he is
+                well-equipped to take on exciting new challenges in his field.
+              </p>
+
+
+            </v-col>
           </v-row>
         </div>
       </v-col>
-      
+
     </v-container>
   </v-app>
 </template>
@@ -52,6 +87,21 @@ import Navbar from '../components/AppNavbar.vue';
 export default defineComponent({
   name: 'HomeView',
 
+  setup() {
+    return {
+      slider2: 50,
+      items: [
+        { 'img': '1.png' },
+        { 'img': '1.png' },
+        { 'img': '1.png' },
+        { 'img': '1.png' },
+        { 'img': '1.png' },
+        { 'img': '1.png' },
+        { 'img': '1.png' },
+      ]
+    }
+  },
+
   components: {
     // HelloWorld,
     Navbar,
@@ -60,11 +110,12 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.v-container{
+.v-container {
   padding: 16px 0;
 
 }
-.head{
+
+.head {
   position: relative;
   text-align: center;
   padding: 12px;
@@ -73,7 +124,8 @@ export default defineComponent({
   width: 100%;
   color: white;
 }
-.head::before{
+
+.head::before {
   content: ' ';
   position: absolute;
   top: 0;
@@ -83,7 +135,8 @@ export default defineComponent({
   background: black;
   transform: skew(0deg, 4deg);
 }
-.head::after{
+
+.head::after {
   content: ' ';
   position: absolute;
   top: 0;
@@ -93,7 +146,8 @@ export default defineComponent({
   background: black;
   transform: skew(0deg, -4deg);
 }
-.egg{
+
+.egg {
   display: block;
   margin-left: 100px;
   margin-top: 50px;
@@ -101,5 +155,4 @@ export default defineComponent({
   height: 300px;
   background-color: yellow;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
-}
-</style>
+}</style>
