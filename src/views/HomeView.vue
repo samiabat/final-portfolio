@@ -3,7 +3,18 @@
     <Navbar />
     <v-container fluid>
       <div class="head">
+        <v-row>
+          <v-col cols="5">
+            <div style="position: relative;" class="mt-16">
+            <h1 class="text-grey">HELLO, </h1>
+            <h1 class="text-grey">I'M SAMUEL ABATNEH</h1>
+            <span class="text-grey">Web Scrapper, AI & Software Engineer</span>
+            </div>
+          </v-col>
+          <v-col cols="5">
 
+          </v-col>
+        </v-row>
       </div>
       
     </v-container>

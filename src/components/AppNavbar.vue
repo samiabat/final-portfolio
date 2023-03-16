@@ -6,11 +6,11 @@
 
         <v-spacer></v-spacer>
         <v-btn text @click="scroll('Home')" class="text-yellow">Home</v-btn>
-        <v-btn text @click="scroll('Projects')" class="text-yellow">Projects</v-btn>
-        <v-btn text @click="scroll('Blogs')" class="text-yellow">Blogs</v-btn>
-        <v-btn text @click="scroll('Certificates')" class="text-yellow">Certificates</v-btn>
-        <v-btn text @click="scroll('About')" class="text-yellow">About</v-btn>
-        <v-btn text @click="scroll('Contact')" class="text-yellow">Contact</v-btn>
+        <v-btn text @click="scroll('Projects')" >Projects</v-btn>
+        <v-btn text @click="scroll('Blogs')" >Blogs</v-btn>
+        <v-btn text @click="scroll('Certificates')" >Certificates</v-btn>
+        <v-btn text @click="scroll('About')">About</v-btn>
+        <v-btn text @click="scroll('Contact')">Contact</v-btn>
     </v-app-bar>
 </template>
 
