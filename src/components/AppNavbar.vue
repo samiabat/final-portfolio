@@ -17,10 +17,10 @@
 <script>
 export default {
     methods: {
-        scroll(refName) {
-            const element = document.getElementById(refName);
-            element.scrollIntoView({behavior: 'smooth'});
-        }
+        // scroll(refName) {
+        //     const element = document.getElementById(refName);
+        //     element.scrollIntoView({behavior: 'smooth'});
+        // }
     }
 }
 
