@@ -29,8 +29,8 @@ const routes = [
     component: BlogPost
   },
   {
-    path: '/cerifications',
-    name: 'cerifications',
+    path: '/certifications',
+    name: 'certifications',
     component: CertificationPage
   },
   {
