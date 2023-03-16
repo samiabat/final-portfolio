@@ -27,7 +27,7 @@
           </v-col>
         </v-row>
       </div>
-      <v-col cols="12" class="mt-16" id="about">
+      <v-col cols="12" class="mt-10" id="about">
         <div>
           <v-row>
             <v-col cols="12" sm="6">
@@ -51,13 +51,10 @@
                 to be a valuable asset to any team.
               </p>
               <br>
-              <p class="text-grey mr-16 mb-16">
+              <p class="text-grey mr-16 mb-10">
                 In addition to his work at Addis Ababa University, Samuel is also a machine learning engineer. He has
                 expertise in building machine learning algorithms and models tailored to specific business needs. He is
                 passionate about exploring machine learning concepts and integrating them into actual projects.
-                In conclusion, Samuel Abatneh is a dedicated tech enthusiast and an excellent addition to any team. With
-                immense experience in software engineering, machine learning, and a strong passion for technology, he is
-                well-equipped to take on exciting new challenges in his field.
               </p>
 
 
