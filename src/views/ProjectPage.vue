@@ -3,10 +3,13 @@
         <!-- <AppNavbar/> -->
         <v-container fluid class="my-16">
             <v-row justify="center">
-                <v-col lg="12" class="text-center">
+                <v-col class="text-center">
                     <v-subheader class="text-h4 justify-center">Projects</v-subheader>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illum. </p>
                 </v-col>
+            </v-row>
+            <v-row justify="center">
+                
                 <v-col lg="4" v-for="project in 6" :key="project" class="px-2">
                     <v-card class="mx-auto" max-width="500">
                         <v-img src="atrons.png" cover></v-img>
