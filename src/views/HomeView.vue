@@ -107,6 +107,7 @@ export default defineComponent({
 .head {
   position: relative;
   text-align: center;
+  margin-top: -20px;
   padding: 0;
   margin-bottom: 6px;
   height: 400px;

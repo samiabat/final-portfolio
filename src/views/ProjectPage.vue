@@ -2,8 +2,7 @@
     <v-app id="home">
         <!-- <AppNavbar/> -->
         <v-container fluid>
-            <div class="head">
-            </div>
+            <div class="head"></div>
             <v-col cols="12">
                 <v-row class="pa-8" dense>
                     <v-col v-for="(item, i) in items" :key="i" cols="12" md="4">
@@ -150,27 +149,29 @@ export default defineComponent({
     },
 
     components: {
-    // AppNavbar
-},
+        // AppNavbar
+    },
 });
 </script>
   
-<style scoped>.v-container {
+<style scoped>
+.v-container {
     padding: 0 0;
-  
-  }
-  
-  .head {
+
+}
+
+.head {
     position: relative;
     text-align: center;
+    margin-top: -20px;
     padding: 0;
     margin-bottom: 6px;
     height: 400px;
     width: 100%;
     color: white;
-  }
-  
-  .head::before {
+}
+
+.head::before {
     content: ' ';
     position: absolute;
     top: -12px;
@@ -179,9 +180,9 @@ export default defineComponent({
     width: 50%;
     background: black;
     transform: skew(0deg, 3deg);
-  }
-  
-  .head::after {
+}
+
+.head::after {
     content: ' ';
     position: absolute;
     top: -12px;
@@ -190,9 +191,9 @@ export default defineComponent({
     width: 50%;
     background: black;
     transform: skew(0deg, -3deg);
-  }
-  
-  .egg {
+}
+
+.egg {
     display: block;
     margin-left: 100px;
     margin-top: 50px;
@@ -200,6 +201,6 @@ export default defineComponent({
     height: 300px;
     background-color: yellow;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
-  }
+}
 </style>
   
