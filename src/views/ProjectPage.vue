@@ -155,45 +155,44 @@ export default defineComponent({
 });
 </script>
   
-<style scoped>
-.v-container {
-    padding: 16px 0;
-
-}
-
-.head {
-  position: relative;
-  text-align: center;
-  padding: 12px;
-  margin-bottom: 6px;
-  height: 200px;
-  width: 100%;
-  color: white;
-}
-
-.head::before {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 50%;
-  background: black;
-  transform: skew(0deg, 4deg);
-}
-
-.head::after {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 50%;
-  background: black;
-  transform: skew(0deg, -4deg);
-}
-
-.egg {
+<style scoped>.v-container {
+    padding: 0 0;
+  
+  }
+  
+  .head {
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 6px;
+    height: 400px;
+    width: 100%;
+    color: white;
+  }
+  
+  .head::before {
+    content: ' ';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: black;
+    transform: skew(0deg, 3deg);
+  }
+  
+  .head::after {
+    content: ' ';
+    position: absolute;
+    top: -12px;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: black;
+    transform: skew(0deg, -3deg);
+  }
+  
+  .egg {
     display: block;
     margin-left: 100px;
     margin-top: 50px;
@@ -201,6 +200,6 @@ export default defineComponent({
     height: 300px;
     background-color: yellow;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
-}
+  }
 </style>
   

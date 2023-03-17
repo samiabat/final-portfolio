@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <v-main>
-      <router-view />
       <AppNavbar/>
+      <router-view />
     </v-main>
     <v-footer dark padless class="justify-center">
       <v-card flat tile class="indigo lighten-1 white--text text-center">

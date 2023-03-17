@@ -1,5 +1,4 @@
 <template>
-  <v-app id="home">
     <!-- <AppNavbar /> -->
     <v-container fluid>
       <div class="head">
@@ -65,7 +64,6 @@
       </v-col>
 
     </v-container>
-  </v-app>
 </template>
 
 <script>
@@ -102,14 +100,14 @@ export default defineComponent({
 
 <style scoped>
 .v-container {
-  padding: 16px 0;
+  padding: 0 0;
 
 }
 
 .head {
   position: relative;
   text-align: center;
-  padding: 12px;
+  padding: 0;
   margin-bottom: 6px;
   height: 400px;
   width: 100%;
@@ -119,23 +117,23 @@ export default defineComponent({
 .head::before {
   content: ' ';
   position: absolute;
-  top: 0;
+  top: -12px;
   left: 0;
   height: 100%;
   width: 50%;
   background: black;
-  transform: skew(0deg, 4deg);
+  transform: skew(0deg, 3deg);
 }
 
 .head::after {
   content: ' ';
   position: absolute;
-  top: 0;
+  top: -12px;
   right: 0;
   height: 100%;
   width: 50%;
   background: black;
-  transform: skew(0deg, -4deg);
+  transform: skew(0deg, -3deg);
 }
 
 .egg {
