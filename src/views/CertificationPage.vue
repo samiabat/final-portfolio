@@ -1,6 +1,5 @@
 <template>
     <v-app id="home">
-        <AppNavbar />
         <v-container fluid>
             <v-col cols="12" class="mt-10" id="about">
                 <v-row class="pa-10">
@@ -58,7 +57,7 @@ import { defineComponent } from 'vue';
 
 // Components
 // import HelloWorld from '../components/HelloWorld.vue';
-import AppNavbar from '../components/AppNavbar.vue';
+// import AppNavbar from '../components/AppNavbar.vue';
 
 export default defineComponent({
     name: 'CertificationPage',
@@ -106,7 +105,7 @@ export default defineComponent({
 
     components: {
         // HelloWorld,
-        AppNavbar,
+        // AppNavbar,
     },
 });
 </script>

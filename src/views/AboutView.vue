@@ -1,7 +1,5 @@
 <template>
   <v-app id="home">
-    <!-- <AppNavbar />
-    <HelloWorld/> -->
     <v-container fluid>
       <div class="head">
         <v-row>
