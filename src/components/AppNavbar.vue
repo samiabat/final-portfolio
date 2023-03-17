@@ -5,8 +5,10 @@
         </v-btn>
 
         <v-spacer></v-spacer>
-        <a href="/" class="text-yellow ml-10">HOME</a>
-        <a href="/blogs" class="text-white ml-10">BLOGS</a>
+        <router-link id="one" to="/home" class="pr-5">Home</router-link>
+        <router-link id="two" to="/projects" class="pr-5">PROJECTS</router-link>
+        <!-- <a href="/home" class="text-yellow ml-10">HOME</a>
+        <a href="/blogs" class="text-white ml-10">BLOGS</a> -->
         <a href="/projects" class="text-white ml-10">PROJECTS</a>
         <a href="/educations" class="text-white ml-10">EDUCATIONS</a>
         <a href="/certifications" class="text-white ml-10">CERTIFICATIONS</a>

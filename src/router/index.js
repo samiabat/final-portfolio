@@ -9,7 +9,7 @@ import ProjectPage from '../views/ProjectPage.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'home',
     component: HomeView
   },
