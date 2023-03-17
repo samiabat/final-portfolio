@@ -1,6 +1,6 @@
 <template>
     <v-app id="home">
-      <Navbar />
+      <AppNavbar />
       <v-container fluid>
         <div class="head">
           <v-row>
@@ -73,7 +73,7 @@
   
   // Components
   // import HelloWorld from '../components/HelloWorld.vue';
-  import Navbar from '../components/AppNavbar.vue';
+  import AppNavbar from '../components/AppNavbar.vue';
   
   export default defineComponent({
     name: 'AboutView',
@@ -95,7 +95,7 @@
   
     components: {
       // HelloWorld,
-      Navbar,
+      AppNavbar,
     },
   });
   </script>
