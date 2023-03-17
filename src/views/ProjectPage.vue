@@ -1,46 +1,38 @@
 <template>
     <v-app id="home">
         <!-- <AppNavbar/> -->
-        <v-container fluid>
-            <div class="head"></div>
-            <v-col cols="12">
-                <v-row class="pa-8" dense>
-                    <v-col v-for="(item, i) in items" :key="i" cols="12" md="4">
-                        <v-card :color="item.color" dark>
-                            <div class="d-flex flex-no-wrap justify-space-between">
-                                <div>
-                                    <v-card-title class="text-h5" v-text="item.title"></v-card-title>
+        <v-container fluid class="my-16">
+            <v-row justify="center">
+                <v-col lg="12" class="text-center">
+                    <v-subheader class="text-h4 justify-center">Projects</v-subheader>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illum. </p>
+                </v-col>
+                <v-col lg="4" v-for="project in 6" :key="project" class="px-2">
+                    <v-card class="mx-auto" max-width="500">
+                        <v-img src="atrons.png" cover></v-img>
 
-                                    <v-card-subtitle v-text="item.artist"></v-card-subtitle>
+                        <v-card-title>
+                            Web developer
+                        </v-card-title>
+                        <v-card-text>
+                            I'm a thing. But, like most politicians, he promised more than he could deliver. You won't
+                            have time for sleeping, soldier, not with all the
+                        </v-card-text>
 
-                                    <v-card-actions>
-                                        <v-btn
-                                            style="text-decoration:none;background-color:blue;border: 2em;border-radius: 1em;">
-                                            <router-link style="color:white;text-decoration:none;" class="ml-2" to="/"
-                                                outlined rounded small>
-                                                VIEW PROJECT
-                                            </router-link>
-                                        </v-btn>
+                        <v-divider class="mx-4">
+                        </v-divider>
 
-                                    </v-card-actions>
-                                </div>
+                        <v-card-actions>
+                            <v-btn color="success" rounded>View Details</v-btn>
+                            <v-spacer />
+                            <v-rating :model-value="4.5" color="amber" density="compact" half-increments readonly
+                                size="small"></v-rating>
 
-                                <v-avatar class="ma-3" size="125" tile>
-                                    <v-img :src="item.src"></v-img>
-                                </v-avatar>
+                        </v-card-actions>
 
-                            </div>
-                            <v-text class="ma-12">Hello HelloWorldHello HelloWorldHello HelloWorldHello HelloWorldHello
-                                HelloWorldHello
-                                HelloWorldHello HelloWorldHello HelloWorldHello HelloWorldHello HelloWorldHello
-                                HelloWorldHello HelloWorld</v-text>
-                        </v-card>
-                        <router-view />
-                    </v-col>
-                </v-row>
-
-            </v-col>
-
+                    </v-card>
+                </v-col>
+            </v-row>
         </v-container>
     </v-app>
 </template>
