@@ -9,10 +9,17 @@
                 </v-col>
             </v-row>
             <v-row justify="center">
-                
                 <v-col lg="4" v-for="project in 6" :key="project" class="px-2">
-                    <v-card class="mx-auto" max-width="500">
-                        <v-img src="atrons.png" cover></v-img>
+                    <v-card class="mx-auto" max-width="500" max-height="800">
+                        <v-carousel cycle hide-delimiter-background show-arrows="hover">
+                            <v-carousel-item src="atrons.png"></v-carousel-item>
+
+                            <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg"></v-carousel-item>
+
+                            <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"></v-carousel-item>
+                        </v-carousel>
+
+                        <!-- <v-img src="atrons.png" cover></v-img> -->
 
                         <v-card-title>
                             Web developer
@@ -153,49 +160,6 @@ export default defineComponent({
 .v-container {
     padding: 0 0;
 
-}
-
-.head {
-    position: relative;
-    text-align: center;
-    margin-top: -20px;
-    padding: 0;
-    margin-bottom: 6px;
-    height: 400px;
-    width: 100%;
-    color: white;
-}
-
-.head::before {
-    content: ' ';
-    position: absolute;
-    top: -12px;
-    left: 0;
-    height: 100%;
-    width: 50%;
-    background: black;
-    transform: skew(0deg, 3deg);
-}
-
-.head::after {
-    content: ' ';
-    position: absolute;
-    top: -12px;
-    right: 0;
-    height: 100%;
-    width: 50%;
-    background: black;
-    transform: skew(0deg, -3deg);
-}
-
-.egg {
-    display: block;
-    margin-left: 100px;
-    margin-top: 50px;
-    width: 360px;
-    height: 300px;
-    background-color: yellow;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
 }
 </style>
   
