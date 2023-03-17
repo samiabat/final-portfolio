@@ -28,7 +28,7 @@
       <v-divider></v-divider>
 
       <div>
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        {{ new Date().getFullYear() }} — <strong>SAMUEL ABATNEH</strong>
       </div>
     </v-footer>
   </v-app>
