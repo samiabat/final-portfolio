@@ -2,7 +2,7 @@
   <v-app>
     <v-main>
       <router-view />
-      
+      <AppNavbar/>
     </v-main>
     <v-footer dark padless class="justify-center">
       <v-card flat tile class="indigo lighten-1 white--text text-center">
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import AppNavbar from './components/AppNavbar.vue';
 
 
 export default {
@@ -34,6 +35,6 @@ export default {
             ],
         };
     },
-    components: {  }
+    components: { AppNavbar }
 }
 </script>
