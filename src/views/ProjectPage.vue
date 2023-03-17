@@ -1,5 +1,6 @@
 <template>
     <v-app id="home">
+        <AppNavbar/>
         <v-container fluid>
             <div class="head">
             </div>
@@ -46,11 +47,12 @@
 </template>
   
 <script>
+// import AppNavbar from '@/components/AppNavbar.vue';
 import { defineComponent } from 'vue';
 
 // Components
 // import HelloWorld from '../components/HelloWorld.vue';
-// import AppNavbar from '../components/AppNavbar.vue';
+import AppNavbar from '../components/AppNavbar.vue';
 
 export default defineComponent({
     name: 'ProjectPage',
@@ -148,9 +150,8 @@ export default defineComponent({
     },
 
     components: {
-        // HelloWorld,
-        // AppNavbar,
-    },
+    AppNavbar
+},
 });
 </script>
   

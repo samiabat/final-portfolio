@@ -1,5 +1,6 @@
 <template>
     <v-app id="home">
+        <AppNavbar/>
         <v-container fluid>
             <v-col cols="12" class="mt-10" id="about">
                 <v-row class="pa-10">
@@ -53,6 +54,7 @@
 </template>
   
 <script>
+import AppNavbar from '../components/AppNavbar.vue';
 import { defineComponent } from 'vue';
 
 // Components
@@ -104,9 +106,8 @@ export default defineComponent({
     },
 
     components: {
-        // HelloWorld,
-        // AppNavbar,
-    },
+    AppNavbar
+},
 });
 </script>
   
